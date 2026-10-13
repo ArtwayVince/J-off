@@ -1,0 +1,6 @@
+{
+  "name": "JET OFF",
+  "description": "Real-world experience, aspirational goal pursuit, and gamified personal progress platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
