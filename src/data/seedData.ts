@@ -101,11 +101,11 @@ export const PILOT_RESORT: Destination = {
       area: 'Approach & Gatehouse',
       coordinates: { x: 18, y: 78 },
       photoUrl: '/src/assets/images/hero_yuby_resort_1791922037790.jpg',
-      description: 'Your physical arrival begins at the stately iron gates. Vehicles stop at the barrier for visitor screening and reservation lookup.',
-      receptionRequirement: 'Driver details and passenger headcount verified against JET OFF reservation records before entry.',
-      confirmedFacilities: ['Automated Barrier', 'Visitor Check Station', 'Directional Signage Board'],
-      etiquetteNotes: 'Keep vehicle window lowered and headlights dipped. Present reservation reference promptly.',
-      safetyRule: 'Strict 20 km/h perimeter limit.',
+      description: 'CUSTOMER ENTRANCE: Stop at the designated customer entrance for security screening. Adamawa Gate is not for customers; do not enter through it. Visitors arriving on foot should use the pedestrian pathway leading directly to reception.',
+      receptionRequirement: 'All visitors, including pedestrians, must be physically checked by security and cleared at the designated customer entrance before proceeding. Vehicle entry is subject to the security team’s instructions.',
+      confirmedFacilities: ['Security Checkpoint', 'Vehicle Barrier', 'Pedestrian Pathway to Reception'],
+      etiquetteNotes: 'Follow the security team’s directions. If arriving on foot, use the pathway to reception and submit to the required physical security check.',
+      safetyRule: 'Do not use Adamawa Gate as a customer entrance. No visitor may bypass security screening or reception clearance.'
     },
     {
       id: 'tour_02_driveway',
@@ -113,10 +113,9 @@ export const PILOT_RESORT: Destination = {
       area: 'Main Boulevard',
       coordinates: { x: 34, y: 62 },
       photoUrl: '/src/assets/images/hero_yuby_resort_1791922037790.jpg',
-      description: 'A 200-meter paved approach flanked by royal palm trees guiding guests safely away from service vehicles towards designated parking.',
-      confirmedFacilities: ['Illuminated Walkway', 'Guest Parking Lot A & B', 'Drop-off Rotary'],
-      etiquetteNotes: 'Do not park along the circular turning bay; unload luggage and proceed to parking bays.',
-      verifiedCostNote: 'Complimentary parking for confirmed day visitors and overnight residents.',
+      description: 'Once the entrance barrier is lifted, turn right and follow the driveway to the parking lot. Park in an orderly manner. After alighting, look for the sign directing visitors to reception and follow it. Do not turn right towards the exit-only gate. If a guard is stationed there, ask for directions to reception. All visitors must be cleared at reception before entering the main resort area.',
+      confirmedFacilities: ['Parking Lot', 'Reception Direction Signage', 'Exit-Only Gate'],
+      etiquetteNotes: 'Turn right after the barrier is lifted, park orderly, then follow the reception sign. Do not use the exit-only gate as an entrance. Ask the guard for directions if needed. Proceed into the resort only after reception clearance.'
     },
     {
       id: 'tour_03_reception',
