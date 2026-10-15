@@ -100,7 +100,7 @@ export const PILOT_RESORT: Destination = {
       title: 'Entrance Gate & Security Clearance',
       area: 'Approach & Gatehouse',
       coordinates: { x: 18, y: 78 },
-      photoUrl: '/src/assets/images/hero_yuby_resort_1791922037790.jpg',
+      photoUrl: '/src/assets/images/yuby_gate_stop_02.jpg',
       description: 'All visitors, including pedestrians, must be physically checked by security and cleared at the designated customer entrance before proceeding.',
       receptionRequirement: 'Follow the security team’s instructions. Vehicle entry is subject to security clearance.',
       confirmedFacilities: ['Security Checkpoint', 'Vehicle Barrier', 'Pedestrian Pathway to Reception'],
