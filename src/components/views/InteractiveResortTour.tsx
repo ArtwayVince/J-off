@@ -136,19 +136,6 @@ export const InteractiveResortTour: React.FC<Props> = ({
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none" />
-              
-              {/* Media Overlay Badge */}
-              <div className="absolute top-4 left-4 bg-slate-900/85 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-white text-xs font-medium flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-amber-400" />
-                <span>Stop {activeStopIndex + 1} of {destination.tourStops.length}: {currentStop.area}</span>
-              </div>
-
-              {/* Stop Title On Overlay */}
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <h3 className="text-lg font-bold text-white drop-shadow-sm">{currentStop.title}</h3>
-                <p className="text-xs text-slate-300 mt-1 line-clamp-2">{currentStop.description}</p>
-              </div>
             </div>
 
             {/* Information & Protocol Details */}
