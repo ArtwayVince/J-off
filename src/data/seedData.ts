@@ -50,10 +50,10 @@ export const PILOT_RESORT: Destination = {
   verifiedIdentity: true,
   openingHours: 'Tuesday - Sunday: 09:00 AM – 10:00 PM (Mondays reserved for ground maintenance)',
   entranceGuide: {
-    gateDescription: 'Primary security checkpoint with automated entry barrier and security staff stationed at the guardhouse.',
-    approachDriveway: 'Paved, dual-lane tree-lined driveway with a strict 20 km/h speed limit leading directly to the guest vehicle rotary.',
-    parkingNotes: 'Designated self-parking bays on the left terrace with CCTV monitoring. Valet available during confirmed private events.',
-    securityCheck: 'All arriving visitors must clear visual verification and present either a confirmed booking voucher or guest invitation before barrier lift.',
+    gateDescription: 'Use the designated customer entrance for visitor security screening. Adamawa Gate is not the customer entrance.',
+    approachDriveway: 'After clearance, follow the designated pedestrian pathway toward reception. Vehicles may proceed only as directed by security.',
+    parkingNotes: 'Follow security staff instructions for vehicle access and parking. Do not assume a parking area is available until directed.',
+    securityCheck: 'All visitors, including pedestrians, must be physically checked by security and cleared at the designated customer entrance before proceeding. Vehicle entry is subject to the security team’s instructions.',
   },
   receptionProtocol: {
     title: 'Mandatory Reception Check-In Procedures',
@@ -101,11 +101,11 @@ export const PILOT_RESORT: Destination = {
       area: 'Approach & Gatehouse',
       coordinates: { x: 18, y: 78 },
       photoUrl: '/src/assets/images/hero_yuby_resort_1791922037790.jpg',
-      description: 'Your physical arrival begins at the stately iron gates. Vehicles stop at the barrier for visitor screening and reservation lookup.',
-      receptionRequirement: 'Driver details and passenger headcount verified against JET OFF reservation records before entry.',
-      confirmedFacilities: ['Automated Barrier', 'Visitor Check Station', 'Directional Signage Board'],
-      etiquetteNotes: 'Keep vehicle window lowered and headlights dipped. Present reservation reference promptly.',
-      safetyRule: 'Strict 20 km/h perimeter limit.',
+      description: 'All visitors, including pedestrians, must be physically checked by security and cleared at the designated customer entrance before proceeding.',
+      receptionRequirement: 'Follow the security team’s instructions. Vehicle entry is subject to security clearance.',
+      confirmedFacilities: ['Security Checkpoint', 'Vehicle Barrier', 'Pedestrian Pathway to Reception'],
+      etiquetteNotes: 'Follow the security team’s directions. If arriving on foot, use the designated pathway to reception and submit to the required physical security check.',
+      safetyRule: 'Do not use Adamawa Gate as the customer entrance.'
     },
     {
       id: 'tour_02_driveway',
