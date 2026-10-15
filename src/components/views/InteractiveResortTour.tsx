@@ -190,39 +190,52 @@ export const InteractiveResortTour: React.FC<Props> = ({
                 </div>
               )}
 
-              {/* Confirmed Facilities Checklist */}
-              <div>
-                <span className="text-xs font-bold text-slate-500 uppercase tracking-wide block mb-2">
-                  Confirmed Physical Facilities at this Stop
-                </span>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                  {currentStop.confirmedFacilities.map((fac, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center gap-2 p-2 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-800"
-                    >
-                      <CheckCircle className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span className="truncate">{fac}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Etiquette & Safety Notice */}
-              <div className={`p-3.5 rounded-xl border text-xs space-y-1.5 ${['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) ? 'bg-yellow-100 border-amber-400 ring-1 ring-yellow-200' : 'bg-slate-50 border-slate-200'}`}>
+              {/* Updated facilities, etiquette and safety guidance */}
+              <div className={`rounded-2xl border p-4 space-y-4 ${['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) ? 'bg-yellow-100 border-amber-400 ring-1 ring-yellow-200' : 'bg-white border-slate-200'}`}>
                 {['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) && (
-                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-amber-900">Updated for review</div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-amber-900">Updated for review — highlighted in yellow</div>
                 )}
-                <div className="flex items-center gap-1.5 font-semibold text-slate-800">
-                  <BadgeCheck className="w-3.5 h-3.5 text-sky-600" />
-                  <span>Real-World Etiquette & Rules</span>
+
+                {/* Confirmed Facilities Checklist */}
+                <div>
+                  <span className="text-xs font-bold text-slate-700 uppercase tracking-wide block mb-2">
+                    Confirmed Physical Facilities at this Stop
+                  </span>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {currentStop.confirmedFacilities.map((fac, i) => (
+                      <div
+                        key={i}
+                        className={`flex items-center gap-2 p-2 rounded-xl border text-xs text-slate-800 ${['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) ? 'bg-yellow-200/70 border-amber-300' : 'bg-slate-50 border-slate-100'}`}
+                      >
+                        <CheckCircle className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                        <span>{fac}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <p className="text-slate-600 leading-relaxed">{currentStop.etiquetteNotes}</p>
-                {currentStop.verifiedCostNote && (
-                  <p className="text-slate-900 font-semibold pt-1 border-t border-slate-200/60">
-                    Pricing Note: {currentStop.verifiedCostNote}
-                  </p>
-                )}
+
+                {/* Etiquette & Safety Notice */}
+                <div className="space-y-2">
+                  <div className="flex items-center gap-1.5 font-semibold text-slate-800">
+                    <BadgeCheck className="w-3.5 h-3.5 text-sky-700" />
+                    <span>Real-World Etiquette & Rules</span>
+                  </div>
+                  <p className="text-slate-800 leading-relaxed text-xs">{currentStop.etiquetteNotes}</p>
+                  {currentStop.safetyRule && (
+                    <div className="rounded-xl border border-amber-500 bg-yellow-200 p-3 text-xs font-semibold text-amber-950">
+                      <div className="mb-1 flex items-center gap-1.5 font-extrabold uppercase tracking-wide">
+                        <ShieldAlert className="w-4 h-4 shrink-0" />
+                        <span>Safety Rule</span>
+                      </div>
+                      <p className="leading-relaxed">{currentStop.safetyRule}</p>
+                    </div>
+                  )}
+                  {currentStop.verifiedCostNote && (
+                    <p className="text-slate-900 font-semibold pt-2 border-t border-amber-300/70 text-xs">
+                      Pricing Note: {currentStop.verifiedCostNote}
+                    </p>
+                  )}
+                </div>
               </div>
 
               {/* Prev / Next Stop Navigation */}
