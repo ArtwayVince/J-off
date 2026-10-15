@@ -158,14 +158,22 @@ export const InteractiveResortTour: React.FC<Props> = ({
                   Area Orientation & Purpose
                 </span>
                 <h3 className="text-xl font-bold text-slate-900 mt-0.5">{currentStop.title}</h3>
-                <p className="text-sm text-slate-600 mt-2 leading-relaxed">
-                  {currentStop.description}
-                </p>
+                <div className={`mt-2 rounded-xl border p-3 ${['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) ? 'border-amber-300 bg-yellow-100 ring-1 ring-yellow-200' : 'border-transparent bg-transparent p-0'}`}>
+                  {['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) && (
+                    <div className="mb-1.5 text-[10px] font-extrabold uppercase tracking-wider text-amber-900">Updated for review</div>
+                  )}
+                  <p className="text-sm text-slate-700 leading-relaxed">
+                    {currentStop.description}
+                  </p>
+                </div>
               </div>
 
               {/* Mandatory Reception Clearance Callout if Stop 1, 2, or 3 */}
               {currentStop.receptionRequirement && (
-                <div className="bg-amber-50/70 border border-amber-200 rounded-2xl p-4 text-xs text-amber-900 space-y-2">
+                <div className={`rounded-2xl border p-4 text-xs text-amber-900 space-y-2 ${['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) ? 'bg-yellow-100 border-amber-400 ring-1 ring-yellow-200' : 'bg-amber-50/70 border-amber-200'}`}>
+                  {['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) && (
+                    <div className="text-[10px] font-extrabold uppercase tracking-wider text-amber-900">Updated for review</div>
+                  )}
                   <div className="flex items-center gap-2 text-amber-900 font-bold">
                     <ShieldAlert className="w-4 h-4 text-amber-600 shrink-0" />
                     <span>Access Restriction & Mandatory Clearance</span>
@@ -201,7 +209,10 @@ export const InteractiveResortTour: React.FC<Props> = ({
               </div>
 
               {/* Etiquette & Safety Notice */}
-              <div className="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+              <div className={`p-3.5 rounded-xl border text-xs space-y-1.5 ${['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) ? 'bg-yellow-100 border-amber-400 ring-1 ring-yellow-200' : 'bg-slate-50 border-slate-200'}`}>
+                {['tour_01_gate', 'tour_02_driveway'].includes(currentStop.id) && (
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-amber-900">Updated for review</div>
+                )}
                 <div className="flex items-center gap-1.5 font-semibold text-slate-800">
                   <BadgeCheck className="w-3.5 h-3.5 text-sky-600" />
                   <span>Real-World Etiquette & Rules</span>
