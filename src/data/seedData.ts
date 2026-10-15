@@ -101,11 +101,11 @@ export const PILOT_RESORT: Destination = {
       area: 'Approach & Gatehouse',
       coordinates: { x: 18, y: 78 },
       photoUrl: '/src/assets/images/hero_yuby_resort_1791922037790.jpg',
-      description: '🟨 CUSTOMER ENTRANCE: Stop at the designated customer entrance for security screening. Adamawa Gate is not for customers; do not enter through it. Visitors arriving on foot should use the pedestrian pathway leading directly to reception.',
-      receptionRequirement: '🟨 All visitors, including pedestrians, must be physically checked by security and cleared at the designated customer entrance before proceeding. Vehicle entry is subject to the security team’s instructions.',
+      description: 'CUSTOMER ENTRANCE: Stop at the designated customer entrance for security screening. Adamawa Gate is not for customers; do not enter through it. Visitors arriving on foot should use the pedestrian pathway leading directly to reception.',
+      receptionRequirement: 'All visitors, including pedestrians, must be physically checked by security and cleared at the designated customer entrance before proceeding. Vehicle entry is subject to the security team’s instructions.',
       confirmedFacilities: ['Security Checkpoint', 'Vehicle Barrier', 'Pedestrian Pathway to Reception'],
-      etiquetteNotes: '🟨 Follow the security team’s directions. If arriving on foot, use the pathway to reception and submit to the required physical security check.',
-      safetyRule: '🟨 Do not use Adamawa Gate as a customer entrance. No visitor may bypass security screening or reception clearance.'
+      etiquetteNotes: 'Follow the security team’s directions. If arriving on foot, use the pathway to reception and submit to the required physical security check.',
+      safetyRule: 'Do not use Adamawa Gate as a customer entrance. No visitor may bypass security screening or reception clearance.'
     },
     {
       id: 'tour_02_driveway',
@@ -113,9 +113,9 @@ export const PILOT_RESORT: Destination = {
       area: 'Main Boulevard',
       coordinates: { x: 34, y: 62 },
       photoUrl: '/src/assets/images/hero_yuby_resort_1791922037790.jpg',
-      description: '🟨 Once the entrance barrier is lifted, turn right and follow the driveway to the parking lot. Park in an orderly manner. After alighting, look for the sign directing visitors to reception and follow it. Do not turn right towards the exit-only gate. If a guard is stationed there, ask for directions to reception. All visitors must be cleared at reception before entering the main resort area.',
+      description: 'Once the entrance barrier is lifted, turn right and follow the driveway to the parking lot. Park in an orderly manner. After alighting, look for the sign directing visitors to reception and follow it. Do not turn right towards the exit-only gate. If a guard is stationed there, ask for directions to reception. All visitors must be cleared at reception before entering the main resort area.',
       confirmedFacilities: ['Parking Lot', 'Reception Direction Signage', 'Exit-Only Gate'],
-      etiquetteNotes: '🟨 Turn right after the barrier is lifted, park orderly, then follow the reception sign. Do not use the exit-only gate as an entrance. Ask the guard for directions if needed. Proceed into the resort only after reception clearance.'
+      etiquetteNotes: 'Turn right after the barrier is lifted, park orderly, then follow the reception sign. Do not use the exit-only gate as an entrance. Ask the guard for directions if needed. Proceed into the resort only after reception clearance.'
     },
     {
       id: 'tour_03_reception',
