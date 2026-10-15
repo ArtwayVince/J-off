@@ -148,6 +148,27 @@ export const InteractiveResortTour: React.FC<Props> = ({
                 <p className="text-sm text-slate-600 mt-2 leading-relaxed">
                   {currentStop.description}
                 </p>
+                {currentStop.id === 'tour_01_gate' && destination.entranceGuide && (
+                  <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4 space-y-3">
+                    <h4 className="text-sm font-bold text-slate-900">Adamawa Gate: Arrival Instructions</h4>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-700">Customer entrance</p>
+                      <p className="text-sm text-slate-600 leading-relaxed">{destination.entranceGuide.gateDescription}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-700">After security clearance</p>
+                      <p className="text-sm text-slate-600 leading-relaxed">{destination.entranceGuide.approachDriveway}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-700">Vehicle access and parking</p>
+                      <p className="text-sm text-slate-600 leading-relaxed">{destination.entranceGuide.parkingNotes}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-700">Required security check</p>
+                      <p className="text-sm text-slate-600 leading-relaxed">{destination.entranceGuide.securityCheck}</p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Mandatory Reception Clearance Callout if Stop 1, 2, or 3 */}
